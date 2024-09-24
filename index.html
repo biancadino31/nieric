@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Flashcard</title>
+</head>
+<body>
+    <main>
+        <section id="container">
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Geografia</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p> O que é globalização?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Globalização é o processo de interconexão econômica, cultural e política entre países, resultando na intensificação das trocas comerciais, fluxo de informações e mobilidade de pessoas em escala global.
+
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Geografia</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que são biomas? </p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Biomas são grandes áreas geográficas que compartilham características climáticas, vegetação e fauna semelhantes, como florestas, desertos, savanas e tundras.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Geografia</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual é a teoria da tectônica de placas?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>A teoria da tectônica de placas propõe que a crosta terrestre é dividida em placas que se movem sobre o manto, causando fenômenos como terremotos, vulcanismo e a formação de montanhas.
+
+
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Filosofia</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é ética?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> Ética é o ramo da filosofia que estuda os princípios do comportamento moral, analisando o que é certo e errado e como devemos agir em diferentes situações.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Filosofia</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Quem foi Sócrates?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>  Sócrates foi um filósofo grego considerado um dos fundadores da filosofia ocidental, famoso por seu método de questionamento dialético e por sua busca pela verdade e pelo conhecimento.
+
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Filosofia </h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é o niilismo? </p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> Niilismo é a crença de que a vida não tem significado ou valor intrínseco, muitas vezes associado à rejeição de normas morais e à negação de verdades absolutas.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Literatura</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é um narrador em primeira pessoa?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>  Um narrador em primeira pessoa é aquele que conta a história a partir de sua própria perspectiva, utilizando pronomes como "eu" e "meu", permitindo uma visão íntima dos pensamentos e sentimentos do narrador.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Literatura</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que caracteriza o realismo literário?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>O realismo literário é um movimento que busca representar a vida e a sociedade de forma objetiva, retratando personagens e situações do cotidiano, frequentemente abordando questões sociais e políticas.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Literatura</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Quem é o autor de "Dom Casmurro"?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> O autor de "Dom Casmurro" é Machado de Assis, um dos principais escritores da literatura brasileira, conhecido por seu estilo inovador e suas profundas análises psicológicas.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>
+            © 2024 Estudo+ | Conectando você ao sucesso acadêmico<br> Explore recursos, descubra dicas e receba orientação para potencializar sua trajetória de aprendizado.<br>
+           
+        </p>
+    </footer>
+    
+    <script src="app.js"></script>
+    <script src="perguntas.js"></script>
+
+    <script>
+        // Seleciona todos os cartões
+        const cartoes = document.querySelectorAll('.cartao');
+    
+        // Adiciona o evento de clique em cada cartão
+        cartoes.forEach(cartao => {
+            cartao.addEventListener('click', function() {
+                // Alterna a classe 'virado' no cartão clicado
+                cartao.classList.toggle('virado');
+            });
+        });
+    </script>
+</body>
+</html>
